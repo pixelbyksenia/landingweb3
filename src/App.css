@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+  font-family: 'Some Time Later';
+  src: url('./fonts/some-time-later.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -15,7 +22,7 @@
 }
 
 .header {
-  padding: 20px 50px;
+  padding: 20px 10px;
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -38,39 +45,33 @@
 }
 
 .hero-section {
-  min-height: 100vh;
+  min-height: 1080px;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  padding: 10px 20px 0;
+  padding: 10px 0px;
 }
 
 .content {
-  max-width: 1200px;
-  width: 80%;
+  width: 100%;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-h1 {
-  max-width: -1%;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 120px;
+.hero-title {
+  position: relative;
+  z-index: 1;
+  font-family: 'Some Time Later', cursive;
+  font-size: 320px;
   text-transform: uppercase;
-  line-height: 4;
-  margin-bottom: 20px;
   color: #FFF256;
   white-space: nowrap;
   letter-spacing: -0.02em;
-  text-align: none;
-  width: 100%;
 }
 
 .text-container {
   width: 100%;
   display: flex;
-  padding-left: 20px;
   box-sizing: border-box;
 }
 
@@ -81,9 +82,9 @@ h1 {
   margin-top: 2px;
   margin-bottom: 0px;
   text-align: left;
-  width: 50%;
+  width: 60%;
   text-transform: uppercase;
-  color: #FFEB00;
+  color: #ffeb00;
   line-height: 120%;
   display: flex;
   flex-direction: column;
@@ -97,19 +98,21 @@ h1 {
   margin-bottom: 0px;
   max-width: 600px;
   text-align: left;
-  width: 100%;
+  width: 60%;
+  line-height: 115%;
 }
 
 .join-text {
   font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-size: 18px;
-  margin-bottom: 30px;
-  text-align: left;
-  width: 100%;
+  text-align: right;
+  line-height: 115%;
+  margin: 0;
 }
 
 .cta-button {
-  background-color: #FFE81F;
+  background-color: #ffe81f;
   color: #000;
   border: none;
   padding: 15px 30px;
@@ -119,10 +122,37 @@ h1 {
   cursor: pointer;
   border-radius: 5px;
   transition: transform 0.2s;
-  display: block;
-  margin: 0 auto;
+  white-space: nowrap;
 }
 
 .cta-button:hover {
   transform: scale(1.05);
+}
+
+.text-description {
+  margin-top: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.sponge-container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -50px;
+}
+
+.sponge-image {
+  min-height: 1080px; 
+  min-width: 1920px; 
+
+  display: block;
 }
