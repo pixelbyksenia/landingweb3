@@ -45,10 +45,14 @@
 }
 
 .hero-section {
-  min-height: 1080px;
+  min-height: 100vh;
   display: flex;
   align-items: flex-start;
-  padding: 10px 0px;
+  justify-content: center;
+  padding: 10px 50px 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../public/image-backgound1.png') center/cover;
 }
 
 .content {
@@ -62,9 +66,9 @@
   position: relative;
   z-index: 1;
   font-family: 'Some Time Later', cursive;
-  font-size: 320px;
+  font-size: 330px;
   text-transform: uppercase;
-  color: #FFF256;
+  color: #fff256;
   white-space: nowrap;
   letter-spacing: -0.02em;
 }
@@ -145,14 +149,172 @@
 }
 
 .sponge-container {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  margin-bottom: -50px;
+  margin-bottom: -100px;
 }
 
 .sponge-image {
-  min-height: 1080px; 
-  min-width: 1920px; 
+  left: 70px;
+  width: 1100px;
+  height: 500px;
+  position: absolute;
+  display: absolute;
+}
 
+.images-section {
+  background-attachment: fixed;
+  position: relative;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
   display: block;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+.image6-section {
+  background-color: #000;
+  position: relative;
+}
+
+.image6-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image6 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.deep-ocean-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 80px;
+  z-index: 10;
+}
+
+.privileges-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80px;
+  left: 30%;
+  z-index: 10;
+}
+
+.collection-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 140px;
+  z-index: 10;
+  line-height: 110%;
+}
+
+.yellow-text {
+  color: #fff256;
+}
+
+.games-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200px;
+  left: 30%;
+  z-index: 10;
+  line-height: 110%;
+}
+
+.community-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 520px;
+  left: 30%;
+  z-index: 10;
+  line-height: 110%;
+}
+
+.line8-section {
+  position: relative;
+  height: 50px;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.line8-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.line8-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.new-section {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.mrkrabs-section {
+  background: url('../public/mrkrabs.png') center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mrkrabs-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
